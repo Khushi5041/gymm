@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Fitness Club</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding-top: 80px;
+      /* offset for fixed navbar */
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">EliteFit</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#transformations">Transformations</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="your-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Elite Fitness Club</h1>
+      <p>Join Patiala's Premier Gym & Spa. Transform your body, mind, and lifestyle today.</p>
+      <a href="start.html" class="btn-transform">Start Your Transformation</a>
+    </div>
+  </section>
+
+  <section class="home-sections">
+    <div class="home-card">
+      <h2>💪 Strength Training</h2>
+      <p>Modern equipment and expert trainers to help you build strength and endurance.</p>
+    </div>
+    <div class="home-card">
+      <h2>🔥 Fat Loss Programs</h2>
+      <p>Personalized diet + workout plans designed to help you burn fat effectively.</p>
+    </div>
+    <div class="home-card">
+      <h2>🧘 Yoga & Wellness</h2>
+      <p>Relax your mind with yoga, spa, and holistic wellness sessions included.</p>
+    </div>
+  </section>
+
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Welcome to Your Transformation!</h2>
+      <p>Fill in your details and start your journey with Elite Fitness Club today. Our trainers are ready to help you
+        achieve your fitness goals!</p>
+      <a href="start.html" class="btn-transform modal-btn">Get My Plans</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="about-hero">
+      <h1>About EliteFit</h1>
+    </div>
+
+    <div class="about-text">
+      <p>
+        At <strong>EliteFit</strong>, we believe fitness is more than just lifting weights – it’s a lifestyle.
+        Our mission is to provide world-class training, personalized coaching, and a supportive community
+        that helps you achieve your fitness goals.
+      </p>
+    </div>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="card-inner">
+          <div class="card-front">Our Mission</div>
+          <div class="card-back">To empower individuals to live healthier, stronger lives through expert guidance, innovation, and motivation.</div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="card-inner">
+          <div class="card-front">Our Vision</div>
+          <div class="card-back">To become the most trusted fitness hub in Patiala by offering holistic health, spa, and training services.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Start Your Fitness Journey Today</h2>
+      <a href="plans.html">Choose Your Plan</a>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="section-heading">
+        <h1>Our Services</h1>
+        <h2>Transform your body with expert guidance</h2>
+    </div>
+
+    <div class="services-container">
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front strength">
+            💪 Strength Training
+          </div>
+          <div class="card-back">
+            <h3>Build Strength</h3>
+            <p>Focus on progressive overload with compound lifts like squats, deadlifts, and bench press.</p>
+            <a href="https://www.youtube.com/watch?v=U0bhE67HuDY" target="_blank">Watch Video</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front muscle">
+            🏋 Muscle Gain
+          </div>
+          <div class="card-back">
+            <h3>Gain Muscle</h3>
+            <p>Eat in a calorie surplus, train with intensity, and prioritize protein intake daily.</p>
+            <a href="https://www.youtube.com/watch?v=d8QwS3jFqD8" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="card-inner">
+          <div class="card-front fatloss">
+            🔥 Fat Loss
+          </div>
+          <div class="card-back">
+            <h3>Burn Fat</h3>
+            <p>Create a calorie deficit, add HIIT training, and stay consistent with nutrition.</p>
+            <a href="https://www.youtube.com/watch?v=ml6cT4AZdqI" target="_blank">Watch Tips</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="transformations">
+    <div class="transform-hero">
+      <h1>Client Transformations</h1>
+      <p>Real people, real results. Witness the inspiring fitness journeys of our amazing clients.</p>
+    </div>
+
+    <div class="transform-container">
+      <h2>Before & After</h2>
+      <div class="transform-grid">
+        <div class="transform-card">
+          <img src="before1.jpg" alt="Before Transformation 1">
+          <img src="after1.jpg" alt="After Transformation 1">
+          <p>6 Months | Weight Loss & Muscle Gain</p>
+        </div>
+        <div class="transform-card">
+          <img src="before2.jpg" alt="Before Transformation 2">
+          <img src="after2.jpg" alt="After Transformation 2">
+          <p>3 Months | Strength Training</p>
+        </div>
+        <div class="transform-card">
+          <img src="before3.jpg" alt="Before Transformation 3">
+          <img src="after3.jpg" alt="After Transformation 3">
+          <p>8 Weeks | Fat Loss Journey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="plans-hero">
+      <h1>Our Membership Plans</h1>
+      <p>Choose the best plan that fits your fitness journey. Whether you’re just starting out or pushing for transformation, we’ve got you covered.</p>
+    </div>
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h2>Basic Plan</h2>
+        <p class="price">₹999/month</p>
+        <ul>
+          <li>Access to Gym</li>
+          <li>Basic Equipment</li>
+          <li>Open 6 AM - 9 PM</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h2>Standard Plan</h2>
+        <p class="price">₹1499/month</p>
+        <ul>
+          <li>Access to Gym + Steam</li>
+          <li>All Equipment</li>
+          <li>Group Workouts</li>
+          <li>Yoga & Zumba</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h2>Premium Plan</h2>
+        <p class="price">₹1999/month</p>
+        <ul>
+          <li>All Standard Features</li>
+          <li>1-on-1 Personal Trainer</li>
+          <li>Diet & Transformation Plan</li>
+          <li>Free Merchandise</li>
+        </ul>
+      </div>
+    </div>
+    <div class="qr-section">
+      <h2>Enroll Now via Google Pay</h2>
+      <p>Scan the QR code below to make the payment:</p>
+      <img src="qr.jpeg" alt="Google Pay QR Code" />
+      <p><strong>UPI ID:</strong> khushibansal843@oksbi</p>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>Have questions? Get in touch with us and start your fitness journey today.</p>
+    </div>
+
+    <div class="contact-container">
+      <h2>Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Send a Message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="tel" placeholder="Your Phone Number" />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-card">
+          <h3>Contact Info</h3>
+          <div class="info-box">
+            <h3>Address</h3>
+            <p>Elite Fitness Club, Patiala</p>
+          </div>
+          <div class="info-box">
+            <h3>Phone</h3>
+            <p>+91 98765 43210</p>
+          </div>
+          <div class="info-box">
+            <h3>Email</h3>
+            <p>elitefitness@gmail.com</p>
+          </div>
+          <div class="info-box">
+            <h3>Follow Us</h3>
+            <p>@elitefitnessclub (Instagram)</p>
+          </div>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.211659124!2d76.386!3d30.3399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102996d7fd!2sPatiala!5e0!3m2!1sen!2sin!4v0000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    ©️ 2025 Elite Fitness Club | Designed for Hackathon 🚀
+  </footer>
+
+</body>
+
+</html>

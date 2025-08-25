@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Fitness Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth; /* smooth scrolling */
+    }
+
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: #111;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 60px 20px 20px 20px;
+    }
+
+    /* Add custom styles for each section */
+    #home { background: url('home-bg.jpg') center/cover no-repeat; }
+    #about { background: #222; }
+    #services { background: #333; }
+    #transformations { background: #444; }
+    #plans { background: #555; }
+    #contact { background: #666; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#transformations">Transformations</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <!-- Your existing Home content -->
+    <h1>Welcome to Elite Fitness Club</h1>
+    <p>Your fitness journey starts here.</p>
+    <a href="#contact"><button>Start Your Fitness Journey</button></a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <!-- Your existing About content -->
+    <h2>About Us</h2>
+    <p>Elite Fitness Club is dedicated to transforming lives.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <!-- Your existing Services content -->
+    <h2>Our Services</h2>
+    <ul>
+      <li>Personal Training</li>
+      <li>Group Workouts</li>
+      <li>Nutrition Guidance</li>
+    </ul>
+  </section>
+
+  <!-- Transformations Section -->
+  <section id="transformations">
+    <!-- Your existing Transformations content -->
+    <h2>Client Transformations</h2>
+    <div>
+      <img src="before1.jpg" alt="Before">
+      <img src="after1.jpg" alt="After">
+    </div>
+    <div>
+      <img src="before2.jpg" alt="Before">
+      <img src="after2.jpg" alt="After">
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans">
+    <!-- Your existing Plans content -->
+    <h2>Choose Your Plan</h2>
+    <div>
+      <p>Fat Loss Plan</p>
+      <img src="qr-fatloss.png" alt="QR Code Fat Loss">
+    </div>
+    <div>
+      <p>Muscle Gain Plan</p>
+      <img src="qr-muscle.png" alt="QR Code Muscle Gain">
+    </div>
+    <div>
+      <p>Strength Training Plan</p>
+      <img src="qr-strength.png" alt="QR Code Strength">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <!-- Your existing Contact content -->
+    <h2>Get Started</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="number" placeholder="Age" required>
+      <input type="text" placeholder="Gender" required>
+      <input type="tel" placeholder="Phone" required>
+      <button type="submit">Generate QR</button>
+    </form>
+    <a href="mailto:elitefitness@example.com"><button>Email Us</button></a>
+  </section>
+
+</body>
+</html>

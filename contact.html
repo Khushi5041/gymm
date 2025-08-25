@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Elite Fitness Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .contact-hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://images.pexels.com/photos/3838389/pexels-photo-3838389.jpeg') no-repeat center center/cover;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .contact-hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      color: #ff0057;
+      text-shadow: 0 0 20px rgba(255,0,87,0.8);
+      animation: fadeInDown 1s ease;
+    }
+
+    .contact-hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 0 auto;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    /* Section Container */
+    .contact-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ff0057;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+    }
+
+    .contact-container h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #ff0057;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    /* Cards */
+    .contact-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(255,0,87,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 25px rgba(255,0,87,0.6);
+    }
+
+    /* Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: #2b2b2b;
+      color: #fff;
+    }
+
+    input:focus, textarea:focus {
+      border: 2px solid #ff0057;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    /* Contact Info */
+    .info-box {
+      margin-bottom: 20px;
+    }
+
+    .info-box h3 {
+      color: #ff0057;
+      margin-bottom: 8px;
+    }
+
+    .info-box p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    /* Button */
+    .btn-container {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      background: linear-gradient(45deg, #ff0057, #ff7300);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(255,0,87,0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #ff7300, #ff0057);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,115,0,0.6);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>Have questions? Get in touch with us and start your fitness journey today.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <h2>Get In Touch</h2>
+    <div class="contact-grid">
+
+      <!-- Left: Contact Form -->
+      <div class="contact-card">
+        <h3>Send a Message</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="tel" placeholder="Your Phone Number" />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="contact-card">
+        <h3>Contact Info</h3>
+        <div class="info-box">
+          <h3>Address</h3>
+          <p>Elite Fitness Club, Patiala</p>
+        </div>
+        <div class="info-box">
+          <h3>Phone</h3>
+          <p>+91 98765 43210</p>
+        </div>
+        <div class="info-box">
+          <h3>Email</h3>
+          <p>elitefitness@gmail.com</p>
+        </div>
+        <div class="info-box">
+          <h3>Follow Us</h3>
+          <p>@elitefitnessclub (Instagram)</p>
+        </div>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.211659124!2d76.386!3d30.3399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102996d7fd!2sPatiala!5e0!3m2!1sen!2sin!4v0000000000" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div class="btn-container">
+    <a href="index.html" class="btn">⬅ Back to Home</a>
+  </div>
+
+</body>
+</html>

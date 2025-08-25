@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transformations | Elite Fitness Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .transform-hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://images.pexels.com/photos/4761790/pexels-photo-4761790.jpeg') no-repeat center center/cover;
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .transform-hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      color: #ff0057;
+      text-shadow: 0 0 20px rgba(255,0,87,0.8);
+      animation: fadeInDown 1s ease;
+    }
+
+    .transform-hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 0 auto;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    /* Section Container */
+    .transform-container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .transform-container h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ff0057;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+    }
+
+    .transform-container h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #ff0057;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Grid */
+    .transform-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    /* Cards */
+    .transform-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255,0,87,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .transform-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 25px rgba(255,0,87,0.6);
+    }
+
+    .transform-card img {
+      width: 100%;
+      display: block;
+      border-bottom: 3px solid #ff0057;
+      transition: transform 0.4s ease;
+    }
+
+    .transform-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .transform-card p {
+      padding: 15px;
+      font-size: 1rem;
+      color: #ccc;
+      background: linear-gradient(to right, #111, #1c1c1c);
+      text-align: center;
+    }
+
+    /* Button */
+    .btn-container {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      background: linear-gradient(45deg, #ff0057, #ff7300);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(255,0,87,0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #ff7300, #ff0057);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,115,0,0.6);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="transform-hero">
+    <h1>Client Transformations</h1>
+    <p>Real people, real results. Witness the inspiring fitness journeys of our amazing clients.</p>
+  </section>
+
+  <!-- Transform Section -->
+  <section class="transform-container">
+    <h2>Before & After</h2>
+    <div class="transform-grid">
+      <div class="transform-card">
+        <img src="before1.jpg" alt="Before Transformation 1">
+        <img src="after1.jpg" alt="After Transformation 1">
+        <p>6 Months | Weight Loss & Muscle Gain</p>
+      </div>
+
+      <div class="transform-card">
+        <img src="before2.jpg" alt="Before Transformation 2">
+        <img src="after2.jpg" alt="After Transformation 2">
+        <p>3 Months | Strength Training</p>
+      </div>
+
+      <div class="transform-card">
+        <img src="before3.jpg" alt="Before Transformation 3">
+        <img src="after3.jpg" alt="After Transformation 3">
+        <p>8 Weeks | Fat Loss Journey</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div class="btn-container">
+    <a href="index.html" class="btn">⬅ Back to Home</a>
+  </div>
+
+</body>
+</html>

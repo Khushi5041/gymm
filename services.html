@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Elite Fitness</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #f1c40f;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ddd;
+    }
+
+    /* Container */
+    .services-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 50px 20px;
+    }
+
+    /* Service Card */
+    .card {
+      width: 280px;
+      height: 380px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s ease;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+
+    /* Front side */
+    .card-front {
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      padding: 15px;
+      background-blend-mode: overlay;
+    }
+
+    .strength {
+      background: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg') center/cover;
+    }
+    .muscle {
+      background: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg') center/cover;
+    }
+    .fatloss {
+      background: url('https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg') center/cover;
+    }
+
+    /* Back side */
+    .card-back {
+      background: #222;
+      color: #fff;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-back h3 {
+      margin-bottom: 15px;
+      color: #f1c40f;
+    }
+
+    .card-back p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .card-back a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #f1c40f;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .card-back a:hover {
+      background: #d4ac0d;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #bbb;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Services</h1>
+  <h2>Transform your body with expert guidance</h2>
+
+  <div class="services-container">
+    <!-- Strength Training Card -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front strength">
+          💪 Strength Training
+        </div>
+        <div class="card-back">
+          <h3>Build Strength</h3>
+          <p>Focus on progressive overload with compound lifts like squats, deadlifts, and bench press.</p>
+          <a href="https://www.youtube.com/watch?v=U0bhE67HuDY" target="_blank">Watch Video</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Muscle Gain Card -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front muscle">
+          🏋 Muscle Gain
+        </div>
+        <div class="card-back">
+          <h3>Gain Muscle</h3>
+          <p>Eat in a calorie surplus, train with intensity, and prioritize protein intake daily.</p>
+          <a href="https://www.youtube.com/watch?v=d8QwS3jFqD8" target="_blank">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fat Loss Card -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front fatloss">
+          🔥 Fat Loss
+        </div>
+        <div class="card-back">
+          <h3>Burn Fat</h3>
+          <p>Create a calorie deficit, add HIIT training, and stay consistent with nutrition.</p>
+          <a href="https://www.youtube.com/watch?v=ml6cT4AZdqI" target="_blank">Watch Tips</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    ©️ 2025 Elite Fitness Club | Designed for Hackathon 🚀
+  </footer>
+
+</body>
+</html>

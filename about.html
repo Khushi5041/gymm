@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EliteFit</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 60vh;
+      background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; width:100%; height:100%;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+      text-shadow: 2px 2px 10px black;
+    }
+
+    /* About Text */
+    .about-text {
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+      padding: 20px;
+    }
+    .about-text p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    /* Mission & Vision Flip Cards */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 50px auto;
+    }
+
+    .card {
+      width: 280px;
+      height: 200px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .card-front {
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+
+    .card-back {
+      background: #222;
+      transform: rotateY(180deg);
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    /* Trainers Section */
+    .trainers {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .trainers h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .trainer-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .trainer {
+      width: 220px;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: transform 0.4s;
+    }
+
+    .trainer img {
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+    }
+
+    .trainer:hover {
+      transform: scale(1.1);
+    }
+
+    /* Call To Action */
+    .cta {
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 50px;
+    }
+    .cta h2 {
+      margin-bottom: 15px;
+    }
+    .cta a {
+      background: #fff;
+      color: #ff512f;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background: #111;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>About EliteFit</h1>
+  </section>
+
+  <!-- About text -->
+  <section class="about-text">
+    <p>
+      At <strong>EliteFit</strong>, we believe fitness is more than just lifting weights – it’s a lifestyle. 
+      Our mission is to provide world-class training, personalized coaching, and a supportive community 
+      that helps you achieve your fitness goals.
+    </p>
+  </section>
+
+  <!-- Mission & Vision Cards -->
+  <section class="cards">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">Our Mission</div>
+        <div class="card-back">To empower individuals to live healthier, stronger lives through expert guidance, innovation, and motivation.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">Our Vision</div>
+        <div class="card-back">To become the most trusted fitness hub in Patiala by offering holistic health, spa, and training services.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Start Your Fitness Journey Today</h2>
+    <a href="plans.html">Choose Your Plan</a>
+  </section>                                                          
+
+</body>
+</html>
